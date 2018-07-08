@@ -16,14 +16,15 @@ and lets Python and the Hy lisp variant play nice together.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/hy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/hy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/hy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/hy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/hy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/hy-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/hy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/hy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hy/badges/version.svg)](https://anaconda.org/conda-forge/hy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hy/badges/downloads.svg)](https://anaconda.org/conda-forge/hy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-hy-green.svg)](https://anaconda.org/conda-forge/hy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/hy.svg)](https://anaconda.org/conda-forge/hy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/hy.svg)](https://anaconda.org/conda-forge/hy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/hy.svg)](https://anaconda.org/conda-forge/hy) |
 
 Installing hy
 =============
@@ -68,6 +69,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
