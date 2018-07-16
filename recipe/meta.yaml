@@ -1,6 +1,6 @@
 {% set name = "hy" %}
-{% set version = "0.12.1" %}
-{% set sha256 = "5d8f52391a82d5868a0dcf7243fe79d26daf5188f9be108dc8668c8952ba51ba" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "286dab290de28a9e2935aea3d3a236177088498e93907820b900d40f70806d31" %}
 
 package:
   name: {{ name|lower }}
@@ -17,12 +17,9 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - hy = hy.cmdline:hy_main
-    - hy2 = hy.cmdline:hy_main
     - hyc = hy.cmdline:hyc_main
-    - hyc2 = hy.cmdline:hyc_main
     - hy2py = hy.cmdline:hy2py_main
-    - hy2py2 = hy.cmdline:hy2py_main
-
+    
 requirements:
   host:
     - pip
@@ -30,9 +27,10 @@ requirements:
     - setuptools
   run:
     - python
-    - rply >=0.7.0
+    - rply >=0.7.6
     - astor >=0.5
     - clint >=0.4
+    - funcparserlib >=0.3.6    
 
 test:
   imports:
@@ -45,12 +43,9 @@ test:
 
   commands:
     - hy --help
-    - hy2 --help
     - hyc --help
-    - hyc2 --help
     - hy2py --help
-    - hy2py2 --help
-
+    
 about:
   home: http://hylang.org/
   license: MIT
