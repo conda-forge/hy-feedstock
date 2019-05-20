@@ -1,6 +1,6 @@
 {% set name = "hy" %}
-{% set version = "0.12.1" %}
-{% set sha256 = "5d8f52391a82d5868a0dcf7243fe79d26daf5188f9be108dc8668c8952ba51ba" %}
+{% set version = "0.17.0" %}
+{% set sha256 = "d17d203f3ea4fdd0d69f153b528d7633e8cf55f1f55ccb8118b2379da3c6abbd" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - hy = hy.cmdline:hy_main
