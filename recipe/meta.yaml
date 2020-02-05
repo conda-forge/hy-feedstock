@@ -32,7 +32,7 @@ requirements:
     - rply >=0.7.7
     - astor >=0.8
     - clint >=0.4
-    - funcparserlib>=0.3.6
+    - funcparserlib >=0.3.6
     - colorama
 
 test:
