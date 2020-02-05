@@ -27,10 +27,12 @@ requirements:
     - python
     - setuptools
   run:
-    - python
-    - rply >=0.7.0
-    - astor >=0.5
+    - pythone
+    - rply >=0.7.7
+    - astor >=0.8
     - clint >=0.4
+    - funcparserlib>=0.3.6
+    - colorama
 
 test:
   imports:
@@ -63,3 +65,4 @@ about:
 extra:
   recipe-maintainers:
     - drewokane
+    - mariusvniekerk
