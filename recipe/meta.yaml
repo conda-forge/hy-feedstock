@@ -21,6 +21,7 @@ build:
     - hyc2 = hy.cmdline:hyc_main
     - hy2py = hy.cmdline:hy2py_main
     - hy2py2 = hy.cmdline:hy2py_main
+  skip: true  # [py2k]
 
 requirements:
   build:
