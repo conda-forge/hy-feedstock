@@ -1,6 +1,6 @@
 {% set name = "hy" %}
-{% set version = "0.18.0" %}
-{% set sha256 = "42f24caaa7f5b4427929859395c215c8cc6e19807b46feaa0b863f3346e5ae11" %}
+{% set version = "0.19.0" %}
+{% set sha256 = "3a5a1d76ddeb2f1d5de71ad1b1167799850db955b5eb0258e351fb182b2e6016" %}
 
 package:
   name: {{ name|lower }}
@@ -55,14 +55,14 @@ test:
 about:
   home: http://hylang.org/
   license: MIT
-  summary: 'Lisp and Python love each other.'
+  summary: Lisp and Python love each other.
   license_file: LICENSE
   description: |
     Hy is a Python <–> Lisp layer. It helps make things work nicer, 
     and lets Python and the Hy lisp variant play nice together.
   doc_url: http://docs.hylang.org/en/latest/
   dev_url: https://github.com/hylang/hy
- 
+
 extra:
   recipe-maintainers:
     - drewokane
