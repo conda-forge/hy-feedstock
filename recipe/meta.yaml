@@ -1,6 +1,6 @@
 {% set name = "hy" %}
-{% set version = "0.20.0" %}
-{% set sha256 = "1b72863754fb57e2dd275a9775bf621cb50a565e76733a2e74e9954e7fbb060e" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "3a00013e075ff5ce8f5d475ca2be47e4c871f09184ba3533787cb544d32d1f9e" %}
 
 package:
   name: {{ name|lower }}
